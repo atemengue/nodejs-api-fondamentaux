@@ -1,0 +1,40 @@
+### GET /vehicules
+
+GET http://localhost:3000/vehicules
+
+### PUT /vehicule/bb05417d-2898-44fa-953f-2713b192fd9e
+PUT http://localhost:3000/vehicule/6780caf5f8c74fb38ea2f4a1
+Content-Type: application/json
+
+{
+  "immatriculation": "MERC-15",
+  "model": "AVENSIS",
+  "annee": 2020,
+  "prixLocation": 100000
+}
+
+### DELETE /vehicule/1
+DELETE http://localhost:3000/vehicule/6780d180b0c590fb8e2ec198
+
+### GET VEHICULE by id
+GET http://localhost:3000/vehicule/6780cbb78f76a429c87a0144 HTTP/1.1
+
+
+### GET /vehicule/search/:immatriculation
+GET http://localhost:3000/vehicule/search/ABD-85 HTTP/1.1
+
+### POST Vehicule
+POST http://localhost:3000/vehicule
+Content-Type: application/json
+
+{
+  "marque": "Mercedes",
+  "model": "GLK",
+  "annee": 2019,
+  "prixLocation": 300000,
+  "immatriculation": "ABD-848"
+}
+
+#### GET /vehicule/price/:prixMax"
+
+GET http://localhost:3000/vehicule/price/400000
